@@ -8,13 +8,8 @@ import numpy as np
 import nltk
 import cv2
 from nltk.stem import WordNetLemmatizer
-import tensorflow as tf
 from tensorflow import keras
-import atexit  # Add this line
-from flask import Flask
-from flask_cors import CORS
-import cv2
-import numpy as np
+import atexit 
 from tkinter import *
 
 
