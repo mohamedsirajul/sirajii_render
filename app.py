@@ -78,6 +78,7 @@ def chat():
     return jsonify({'response': res})
 
 
+
 # Run the Flask app
 if __name__ == '__main__':
     atexit.register(clean_up)  # Register cleanup function
