@@ -6,5 +6,9 @@ app = Flask(__name__)
 def sirajull():
     return 'Hello Sirajulllll!'
 
+@app.route('/sirajulllls')
+def sirajull():
+    return 'Hello Sirajulllll!'
+
 if __name__ == '__main__':
     app.run()
