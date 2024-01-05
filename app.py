@@ -7,7 +7,8 @@ def sirajull():
     return 'Hello Sirajulllll!'
 
 @app.route('/sirajulllls')
-def sirajull():
+
+def sirajii():
     return 'MOHAMED SIRAJIII!'
 
 if __name__ == '__main__':
