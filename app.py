@@ -6,10 +6,8 @@ import pickle
 import numpy as np
 # import wikipedia
 import nltk
-import cv2
 from nltk.stem import WordNetLemmatizer
 from tensorflow import keras
-import atexit 
 from tkinter import *
 
 app = Flask(__name__)
@@ -23,9 +21,6 @@ words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 chatbot_model = keras.models.load_model('chatbotmodel.h5')
 
-
-def clean_up():
-    cv2.destroyAllWindows()
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
@@ -74,5 +69,4 @@ def chat():
 
 # Run the Flask app
 if __name__ == '__main__':
-    atexit.register(clean_up)  # Register cleanup function
     app.run(port=5000)
