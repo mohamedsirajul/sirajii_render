@@ -2,6 +2,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
+@app.route('/siraji')
+def sirajull():
+    return 'Hello Sirajulllll!'
+
 @app.route('/sirajulllls')
 def sirajull():
     return 'MOHAMED SIRAJIII!'
