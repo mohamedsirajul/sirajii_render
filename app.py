@@ -12,8 +12,6 @@ from tensorflow import keras
 import atexit 
 from tkinter import *
 
-
-
 app = Flask(__name__)
 CORS(app)
 
